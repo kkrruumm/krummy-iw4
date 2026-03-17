@@ -1,2 +1,2 @@
-# IW4 Server Configs
-This repo contains the IW4 Dedicated Server Config files for IW4x.
+# krummy iw4x server configs
+this repo contains the configs / serverside scripts for my "krummy servers" for iw4x
