@@ -1,0 +1,19 @@
+#!/sbin/openrc-run
+command="/mnt/startserver.sh"
+command_user="iw4x:iw4x"
+
+output_log="/var/log/iw4x.log"
+error_log="/var/log/iw4x.err"
+
+# automatically handle the PID file and backgrounding
+command_background="true"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    need net
+}
+
+start_pre() {
+    # ensure log files exist and are writable by the iw4x user 
+    checkpath -f -m 0644 -o "${command_user}" "${output_log}" "${error_log}"
+}
