@@ -17,7 +17,7 @@ esac
 LANMode=0
 
 # Enable logging
-LogFile=1
+LogFile=0
 
 # move to the directory that has MW2 files 
 cd /mnt ||
