@@ -6,6 +6,7 @@ name=$(uname -n) # each container has an assigned hostname corresponding to what
 case "$name" in
     iw46v6tdm) GamePort=28960 && ServerFilename=tdm.cfg ;;
     iw46v6snd) GamePort=28961 && ServerFilename=snd.cfg ;;
+    iw48pgg) GamePort=28962 && ServerFilename=gg.cfg ;;
     *) printf '%s\n' 'unknown hostname, where am i?' ; exit 1 ;;
 esac
 
