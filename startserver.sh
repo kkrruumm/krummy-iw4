@@ -5,10 +5,10 @@
 name=$(uname -n) # each container has an assigned hostname corresponding to what kind of server it's running
 
 case "$name" in
-    iw46v6tdm) GamePort=28960 && ServerFilename=tdm.cfg && HomePath=/mnt/homepaths/6v6tdm ;;
-    iw46v6snd) GamePort=28961 && ServerFilename=snd.cfg && HomePath=/mnt/homepaths/6v6snd ;;
-    iw48pgg)   GamePort=28962 && ServerFilename=gg.cfg  && HomePath=/mnt/homepaths/8pgg   ;;
-    iw4gtnw)   GamePort=28963 && ServerFilename=gtnw.cfg && HomePath=/mnt/homepaths/gtnw  ;;
+    iw46v6tdm) GamePort=47768 && ServerFilename=tdm.cfg && HomePath=/mnt/homepaths/6v6tdm ;;
+    iw46v6snd) GamePort=47769 && ServerFilename=snd.cfg && HomePath=/mnt/homepaths/6v6snd ;;
+    iw48pgg)   GamePort=47770 && ServerFilename=gg.cfg  && HomePath=/mnt/homepaths/8pgg   ;;
+    iw4gtnw)   GamePort=47771 && ServerFilename=gtnw.cfg && HomePath=/mnt/homepaths/gtnw  ;;
     *) printf '%s\n' 'unknown hostname, where am i?' ; exit 1 ;;
 esac
 
